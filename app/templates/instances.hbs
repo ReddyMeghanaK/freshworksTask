@@ -1,0 +1,10 @@
+{{page-title "Instances"}}
+
+<h1>Hello Instance page</h1>
+<div>
+  {{debugger}}
+    {{#each this.model as |instance|}}
+    <p>{{instance.name}}</p>
+    {{/each}}
+</div>
+{{outlet}}
