@@ -1,0 +1,33 @@
+@import './create';
+
+body{
+    padding-top: 2vw;
+    padding-right: 0vw;
+    padding-top: 2vw;
+}
+.navlogo{
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+h1{
+    font-size: 60px;
+    color: rgb(11,81,100); 
+}
+.navconatiner a{
+  font-size: 25px;
+  color: black;
+  padding-left: 4vw;
+  
+  padding: 10px;
+  padding-right: 0vw;
+  margin: 5px;
+&:hover{
+   color: rgba(238, 198, 19, 0.87);
+   text-decoration: none;
+}
+}
+
+
+
+
+  

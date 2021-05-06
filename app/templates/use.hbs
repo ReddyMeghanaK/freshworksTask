@@ -1,0 +1,33 @@
+{{page-title "Use"}}
+<center>
+  <div class="createpage" >
+        <h2>Use an Instance</h2>
+ 
+        <form class="theform" method="get" {{action 'use' on='submit'}}> 
+            <div class="row">
+         <label> InstanceID: </label>
+         <Input @type="number" style="width: 15.7em" @value={{this.InstanceID}}/> 
+      </div>
+            <div class="row">
+              <label> Name: </label>
+              <Input @type="text" size="30" @value={{this.instanceName}}/>
+           </div>
+           <div class="row">
+               <label> TeamID:  </label>
+               <Input  @type="number" style="width: 15.7em" @value={{this.teamID}} />
+           </div>
+           <div class="row">
+               <label> EngineerName: </label>
+               <Input @type="text"  size="30" @value={{this.usedBy}}/>
+            </div>  
+            <div class="row">
+               <label> Reason: </label>
+               <Input @type="text" size="50" @value={{this.reason}}/>
+            </div> 
+             <button id="id_button" type="submit" value="submit">Use</button> 
+            
+        </form>
+                 <h3> {{this.displayInstance}}</h3>
+      </div>
+</center>
+{{outlet}}

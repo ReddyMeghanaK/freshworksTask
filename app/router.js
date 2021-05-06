@@ -8,4 +8,10 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   this.route('instances');
+  this.route('create');
+  this.route('delete');
+  this.route('fetch');
+  this.route('search');
+  this.route('update');
+  this.route('use');
 });

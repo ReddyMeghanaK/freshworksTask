@@ -1,0 +1,20 @@
+<center>
+<div class="createpage" >
+   <h2>Delete an Instance</h2>
+   <form class="theform" method="delete" {{action 'delete' on='submit'}}>
+       <div class="row">
+         <label> InstanceID: </label>
+         <Input @type="number" style="width: 15.7em" @value={{this.instanceID}}/> 
+      </div>    
+     <div class="row">
+       <label> TeamID:  </label>
+       <Input  @type="number" style="width: 15.7em" @value={{this.teamID}}/>
+     </div>
+   <button id="id_button" type="submit" value="submit">Delete</button> 
+</form>
+
+</div>
+</center>
+
+
+{{outlet}}

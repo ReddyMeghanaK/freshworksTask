@@ -20,7 +20,7 @@ module.exports = function (environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-      usingCors : false
+      usingCors : true
     },
   };
 
@@ -48,7 +48,7 @@ module.exports = function (environment) {
     // here you can enable a production-specific feature
   }
   ENV.contentSecurityPolicy = {
-    'connect-src' : " 'self' http://localhost:8080",
+    'connect-src' : " 'self' http://localhost:8080/api/instances",
   }
 
   return ENV;

@@ -7,6 +7,12 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
+  
+  
 }
 
+Ember.Logger.warn = () => {}
+Ember.Logger.deprecate = () => {}
+
 loadInitializers(App, config.modulePrefix);
+

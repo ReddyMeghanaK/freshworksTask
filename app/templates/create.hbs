@@ -1,0 +1,26 @@
+<center>
+    <div class="createpage" >
+        <h2>Create a new Instance</h2>
+ 
+        <form class="theform" method="post" {{action 'add' on='submit'}}> 
+            <div class="row">
+              <label> Name: </label>
+              <Input @type="text" size="30" @value={{this.instanceName}}/>
+           </div>
+           <div class="row">
+               <label> TeamID:  </label>
+               <Input  @type="number" style="width: 15.7em" @value={{this.teamID}} />
+           </div>
+           <div class="row">
+               <label> CreatedBy: </label>
+               <Input @type="text"  size="30" @value={{this.createdBy}}/>
+            </div>  
+             <button id="id_button" type="submit" value="submit">Create</button> 
+        </form>
+
+      </div>
+
+
+  </center>
+{{outlet}} 
+    

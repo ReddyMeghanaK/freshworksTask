@@ -1,0 +1,22 @@
+{{page-title "Search"}}
+<center>
+<div class="createpage" >
+   <h2>Search for an Instance</h2>
+   <form class="theform" method="get" {{ action 'search' on='submit'}}>
+       <div class="row">
+         <label> InstanceID: </label>
+         <Input @type="number" style="width: 15.7em" @value={{this.InstanceID}}/> 
+      </div>
+      <div class="row">
+        <label> Name: </label>
+        <Input @type="text" size="30" @value={{this.instanceName}}/>
+     </div>
+   <button id="id_button" type="submit" value="submit">search</button> 
+</form>
+<h3>{{this.searchedInstance}}</h3>
+</div>
+           
+</center>
+
+
+{{outlet}}
